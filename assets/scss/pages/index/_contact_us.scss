@@ -1,0 +1,105 @@
+.contact_us {
+  background-color: #fbf2f2;
+  padding: $section-padding 0;
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: $main-font-color;
+    margin-bottom: 1.5rem;
+  }
+  &-content {
+    margin-bottom: 1.5rem;
+  }
+  &-form {
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    textarea {
+      height: 8.5rem;
+    }
+    &-input {
+      width: 100%;
+      padding: 6px 12px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    &-btn {
+      border: 0;
+      background-color: $main-bg-color;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 1rem 0;
+      width: 100%;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #fff;
+        color: $main-bg-color;
+        font-size: 1.25rem;
+        margin-bottom: -6px;
+      }
+    }
+    &-privacy {
+      margin-bottom: 1.5rem;
+      input[type="checkbox"] {
+        display: none;
+      }
+      input[type="checkbox"] + label {
+        position: relative;
+        padding-left: 2rem;
+      }
+      input[type="checkbox"] + label:before {
+        content: "";
+        font-family: Material Icons Outlined;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 2px solid #000;
+        border-radius: 0.25rem;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+      input[type="checkbox"]:checked + label:before {
+        content: "check";
+        display: inline-block;
+        color: #fff;
+        background-color: $main-font-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact_us {
+    padding: $section-padding-md 0;
+    .container {
+      max-width: 600px;
+    }
+    &-title {
+      font-size: $title-fz-md;
+      margin-bottom: 3rem;
+    }
+    &-form {
+      &-privacy {
+        margin-bottom: 3rem;
+      }
+      &-btn {
+        display: block;
+        width: calc(75% - 16px);
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .contact_us {
+    .container {
+      max-width: 660px;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.store {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  &-select {
+    &-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-left: 1rem;
+      border-left: 8px solid #9f1213;
+      margin-bottom: 1.5rem;
+    }
+    &-form {
+      margin-bottom: 1.5rem;
+      h2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      span {
+        margin-right: 0.5rem;
+      }
+      &-select {
+        padding: 6px 12px;
+        width: calc(100% - 96px);
+        font-size: 18px;
+        color: #495057;
+      }
+    }
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    a {
+      color: #212529;
+    }
+    &-card {
+      &-title {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem;
+        border: 1px solid rgb(0, 0, 0, 0.125);
+      }
+      &-content {
+        padding: 1rem 1.5rem;
+        border: 1px solid rgb(0, 0, 0, 0.125);
+        font-size: 1.25rem;
+        li {
+          display: flex;
+          align-items: center;
+          &:not(:last-child) {
+            padding-bottom: 0.5rem;
+          }
+        }
+        span {
+          font-family: "Material Icons Outlined";
+          padding-right: 10px;
+        }
+        & + button {
+          border: none;
+          width: 100%;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          background-color: #000;
+          color: #fff;
+          font-size: 1.25rem;
+        }
+      }
+      &-address {
+        span {
+          margin-bottom: 30px;
+        }
+      }
+      &:hover {
+        box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.125);
+      }
+    }
+  }
+  &-location {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .store {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &-select {
+      &-title {
+        font-size: 3rem;
+      }
+      &-form {
+        margin-bottom: 2rem;
+        h2 {
+          justify-content: initial;
+        }
+        span {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+        }
+        &-select {
+          width: 304px;
+        }
+      }
+    }
+    &-list {
+      &-card {
+        width: calc(50% - 12px);
+        img {
+          height: 224px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .store {
+    padding-top: 6rem;
+    &-select {
+      &-form {
+        margin-bottom: 2.5rem;
+      }
+    }
+    &-list {
+      justify-content: initial;
+      &-card {
+        width: calc(33.33333333% - 16px);
+      }
+    }
+  }
+}

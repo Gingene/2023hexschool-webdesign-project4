@@ -1,0 +1,19 @@
+$main-font-color: #650300;
+$main-bg-color: #aa0601;
+$section-padding: 2.5rem;
+$section-padding-md: $section-padding * 2;
+
+$title-fz: 1.5rem;
+$title-fz-md: $title-fz * 2;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  // outline: 1px solid lightgreen;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
