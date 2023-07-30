@@ -1,11 +1,14 @@
 .event {
   margin-top: 1rem;
   margin-bottom: 4rem;
+  @include pad {
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+  }
   &-link {
     &-title {
       margin-bottom: 0.5rem;
       a {
-        color: #000;
         &:last-child {
           color: $main-bg-color;
         }
@@ -14,6 +17,9 @@
     &-titletag {
       color: $main-bg-color;
       margin-bottom: 0.5rem;
+      @include pad {
+        font-size: 1.5rem;
+      }
       a {
         color: $main-bg-color;
         font-weight: 700;
@@ -21,74 +27,59 @@
       }
     }
   }
-  &-section {
-    display: flex;
-    gap: 1.5rem;
-  }
+
   &-main {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    @include pad {
+      width: $col9;
+    }
+    @include pc {
+      width: $col8;
+    }
     &-title {
       font-size: 1.5rem;
+      @include pad {
+        font-size: 3rem;
+      }
     }
     &-subtitle {
       margin-bottom: 1rem;
+      @include pad {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
     }
     &-article {
       &-pic {
         margin-bottom: 0.5rem;
+        @include pad {
+          margin-bottom: 1rem;
+        }
       }
       &-content {
         margin-bottom: 1rem;
         color: #555555;
+        @include pad {
+          margin-bottom: 1.5rem;
+        }
       }
       &-adcopy {
         color: #555555;
+        @include pad {
+          margin-bottom: 2.5rem;
+        }
       }
     }
   }
 
   &-tag {
     display: none;
-  }
-  &-social {
-    display: none;
-  }
-  &-pagelink {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .event {
-    margin-top: 0.5rem;
-    margin-bottom: 5rem;
-    &-link {
-      &-titletag {
-        font-size: 1.5rem;
-      }
-    }
-    &-main {
-      &-title {
-        font-size: 3rem;
-      }
-      &-subtitle {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-      }
-      &-article {
-        &-pic {
-          margin-bottom: 1rem;
-        }
-        &-content {
-          margin-bottom: 1.5rem;
-        }
-        &-adcopy {
-          margin-bottom: 2.5rem;
-        }
-      }
-    }
-
-    &-tag {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    @include pad {
       display: block;
+      width: $col3;
       &-title {
         display: flex;
         align-items: center;
@@ -104,7 +95,19 @@
         }
       }
     }
-    &-social {
+    @include pc {
+      width: $col4;
+      &-title {
+        font-size: 2rem;
+      }
+      &-tags {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &-social {
+    display: none;
+    @include pad {
       display: block;
       padding-bottom: 1rem;
       margin-bottom: 1.5rem;
@@ -126,7 +129,10 @@
         }
       }
     }
-    &-pagelink {
+  }
+  &-pagelink {
+    display: none;
+    @include pad {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -151,19 +157,6 @@
           }
         }
         transition: transform 0.5s;
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .event {
-    &-tag {
-      &-title {
-        font-size: 2rem;
-      }
-      &-tags {
-        font-size: 1.5rem;
       }
     }
   }

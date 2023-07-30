@@ -10,6 +10,18 @@ img {
   height: auto;
 }
 
+@mixin xxl {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
 @mixin pc {
   @media (min-width: 992px) {
     @content;
