@@ -1,40 +1,53 @@
 .store {
-  padding-top: 2.5rem;
-  padding-bottom: 4rem;
   &-select {
-    &-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      padding-left: 1rem;
-      border-left: 8px solid #9f1213;
-      margin-bottom: 1.5rem;
-    }
     &-form {
       margin-bottom: 1.5rem;
+      @include pad {
+        margin-bottom: 2rem;
+      }
+      @include pc {
+        margin-bottom: 2.5rem;
+      }
       h2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include pad {
+          justify-content: initial;
+        }
       }
       span {
         margin-right: 0.5rem;
+        @include pad {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+        }
       }
-      &-select {
+      &-input {
         padding: 6px 12px;
         width: calc(100% - 96px);
         font-size: 18px;
         color: #495057;
+        @include pad {
+          width: 304px;
+        }
       }
     }
   }
   &-list {
-    display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    @include pc {
+      justify-content: initial;
+    }
     a {
       color: #212529;
     }
     &-card {
+      img {
+        @include pad {
+          height: 224px;
+        }
+      }
       &-title {
         font-size: 1.5rem;
         padding: 0.5rem 1.5rem;
@@ -79,55 +92,5 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .store {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    &-select {
-      &-title {
-        font-size: 3rem;
-      }
-      &-form {
-        margin-bottom: 2rem;
-        h2 {
-          justify-content: initial;
-        }
-        span {
-          font-size: 1.5rem;
-          margin-right: 1rem;
-        }
-        &-select {
-          width: 304px;
-        }
-      }
-    }
-    &-list {
-      &-card {
-        width: calc(50% - 12px);
-        img {
-          height: 224px;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .store {
-    padding-top: 6rem;
-    &-select {
-      &-form {
-        margin-bottom: 2.5rem;
-      }
-    }
-    &-list {
-      justify-content: initial;
-      &-card {
-        width: calc(33.33333333% - 16px);
-      }
-    }
   }
 }

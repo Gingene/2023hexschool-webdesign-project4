@@ -18,16 +18,16 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <main class="store">
+    <main class="store page-py">
       <section class="store-select container">
-        <h1 class="store-select-title">門市據點</h1>
+        <h1 class="store-select-title page-title">門市據點</h1>
         <form class="store-select-form" name="area">
           <h2>
-            <span>選擇地區</span>
+            <span class="store-select-form-area">選擇地區</span>
             <input
               type="text"
               list="location"
-              class="store-select-form-select"
+              class="store-select-form-input"
               id="locationInput"
             />
             <datalist id="location" name="list">
@@ -41,8 +41,8 @@
       </section>
 
       <section class="store-location container">
-        <ul class="store-list">
-          <li class="store-list-card" id="taipei0">
+        <ul class="store-list row row-gap">
+          <li class="store-list-card card-m2-l3" id="taipei0">
             <a href="branch.html">
               <img src="../assets/images/store-1.png" alt="台北市中山旗艦店" />
               <h3 class="store-list-card-title">台北市中山旗艦店</h3>
@@ -63,7 +63,7 @@
               <button>詳細資訊</button>
             </a>
           </li>
-          <li class="store-list-card" id="taipei1">
+          <li class="store-list-card card-m2-l3" id="taipei1">
             <a href="">
               <img src="../assets/images/store-2.png" alt="台北市綠園店" />
               <h3 class="store-list-card-title">台北市綠園店</h3>
@@ -84,7 +84,7 @@
               <button>詳細資訊</button>
             </a>
           </li>
-          <li class="store-list-card" id="taichung0">
+          <li class="store-list-card card-m2-l3" id="taichung0">
             <a href="">
               <img src="../assets/images/store-3.png" alt="台中清水旗艦店" />
               <h3 class="store-list-card-title">台中清水旗艦店</h3>
@@ -105,7 +105,7 @@
               <button>詳細資訊</button>
             </a>
           </li>
-          <li class="store-list-card" id="Kaohsiung0">
+          <li class="store-list-card card-m2-l3" id="Kaohsiung0">
             <a href="">
               <img src="../assets/images/store-4.png" alt="高雄中正形象店" />
               <h3 class="store-list-card-title">高雄中正形象店</h3>
@@ -126,7 +126,7 @@
               <button>詳細資訊</button>
             </a>
           </li>
-          <li class="store-list-card" id="Kaohsiung1">
+          <li class="store-list-card card-m2-l3" id="Kaohsiung1">
             <a href="">
               <img src="../assets/images/store-5.png" alt="高雄夢時代店" />
               <h3 class="store-list-card-title">高雄夢時代店</h3>
