@@ -8,6 +8,18 @@
   }
 }
 
+.page-py {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  @include pad {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  @include pc {
+    padding-top: 6rem;
+  }
+}
+
 .index-stitle {
   text-align: center;
   font-size: $title-fz;
@@ -16,6 +28,18 @@
   @include pad {
     font-size: $title-fz-md;
     margin-bottom: 3rem;
+  }
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  border-left: 8px solid #9f1213;
+  margin-bottom: 1.5rem;
+  @include pad {
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -37,6 +61,17 @@
 .card-l3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  @include pc {
+    width: $c3;
+  }
+}
+
+.card-m2-l3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  @include pad {
+    width: $c2;
+  }
   @include pc {
     width: $c3;
   }

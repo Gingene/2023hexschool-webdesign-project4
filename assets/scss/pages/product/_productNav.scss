@@ -14,37 +14,19 @@
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         color: #000;
+        @include pad {
+          padding: 1rem 3rem 0.5rem 3rem;
+          font-size: 1.5rem;
+        }
+        @include pc {
+          font-size: 2rem;
+        }
         &.active {
           border-bottom: 8px solid $main-bg-color;
         }
         &:hover {
           background-color: $main-bg-color;
           color: #fff;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .category {
-    &-menu {
-      &-item {
-        &-link {
-          padding: 1rem 3rem 0.5rem 3rem;
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .category {
-    &-menu {
-      &-item {
-        &-link {
-          font-size: 2rem;
         }
       }
     }
