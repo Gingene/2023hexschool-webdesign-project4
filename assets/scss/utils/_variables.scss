@@ -1,0 +1,38 @@
+$main-font-color: #650300;
+$main-bg-color: #aa0601;
+$section-padding: 2.5rem;
+$section-padding-md: $section-padding * 2;
+
+$gutter: 1.5rem;
+
+$title-fz: 1.5rem;
+$title-fz-md: $title-fz * 2;
+
+$r1: 1rem;
+
+$rn: (
+  025: $r1 * 0.25,
+  05: $r1 * 0.5,
+  075: $r1 * 0.75,
+  1: $r1,
+  125: $r1 * 1.25,
+  15: $r1 * 1.5,
+  175: $r1 * 1.75,
+  2: $r1 * 2,
+);
+
+// @each $key, $value in $rn {
+//   .mb-#{$key}-3 {
+//     margin-bottom: $value;
+//     @include pad {
+//       margin-bottom: 3rem;
+//     }
+//   }
+// }
+
+$w100: 100%;
+$c2: calc($w100 / 12) * 6;
+$c3: calc($w100 / 12) * 4;
+$c4: calc($w100 / 12) * 3;
+$col5: calc($w100 / 12) * 5;
+$col7: calc($w100 / 12) * 7;

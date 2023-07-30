@@ -1,14 +1,28 @@
 .home {
-  background-image: url("../images/home-header-sm.png");
+  background-image: url(../images/home-header-sm.png);
   background-size: cover;
+  @include pc {
+    background-image: url(../images/home-header.png);
+  }
   &-banner {
     color: $main-font-color;
     text-align: right;
     padding: 143px 0;
+    @include pad {
+      padding: 339px 0;
+    }
+    h1 {
+      @include pad {
+        font-size: 2.25rem;
+      }
+    }
     h2 {
       font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
+      @include pad {
+        font-size: 4rem;
+      }
     }
     a {
       display: inline-block;
@@ -22,25 +36,5 @@
         padding-right: 3rem;
       }
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .home {
-    &-banner {
-      padding: 339px 0;
-      h1 {
-        font-size: 2.25rem;
-      }
-      h2 {
-        font-size: 4rem;
-      }
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .home {
-    background-image: url("../images/home-header.png");
   }
 }

@@ -1,23 +1,18 @@
 .customerR {
-  padding: $section-padding 0;
   &-title {
-    font-size: $title-fz;
-    font-weight: 700;
-    text-align: center;
     color: $main-font-color;
-    margin-bottom: 1.5rem;
   }
   &-list {
-    display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
     justify-content: center;
     align-items: center;
+    @include pc {
+      flex-wrap: nowrap;
+    }
     &-card {
-      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.161);
       border-radius: 4px;
       &-content {
-        // position: relative;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.161);
         padding: 1rem;
         height: 205px;
         display: flex;
@@ -31,32 +26,6 @@
         font-size: 14px;
         color: #707070;
         margin-top: auto;
-      }
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .customerR {
-    padding: $section-padding-md 0;
-    &-title {
-      font-size: $title-fz-md;
-      margin-bottom: 3rem;
-    }
-    &-list {
-      &-card {
-        width: calc(50% - 12px);
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .customerR {
-    &-list {
-      flex-wrap: nowrap;
-      &-card {
-        width: calc(25% - 12px);
       }
     }
   }

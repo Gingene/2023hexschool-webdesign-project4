@@ -1,11 +1,3 @@
-$main-font-color: #650300;
-$main-bg-color: #aa0601;
-$section-padding: 2.5rem;
-$section-padding-md: $section-padding * 2;
-
-$title-fz: 1.5rem;
-$title-fz-md: $title-fz * 2;
-
 *,
 *:before,
 *:after {
@@ -16,4 +8,16 @@ $title-fz-md: $title-fz * 2;
 img {
   max-width: 100%;
   height: auto;
+}
+
+@mixin pc {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (min-width: 768px) {
+    @content;
+  }
 }

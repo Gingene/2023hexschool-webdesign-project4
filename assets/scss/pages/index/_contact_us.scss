@@ -1,12 +1,15 @@
 .contact_us {
   background-color: #fbf2f2;
-  padding: $section-padding 0;
+  .container {
+    @include pad {
+      max-width: 600px;
+    }
+    @include pc {
+      max-width: 660px;
+    }
+  }
   &-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
     color: $main-font-color;
-    margin-bottom: 1.5rem;
   }
   &-content {
     margin-bottom: 1.5rem;
@@ -34,6 +37,14 @@
       padding: 1rem 0;
       width: 100%;
       transition: all 0.3s;
+      @include pad {
+        display: block;
+        width: 58.34%;
+        margin: 0 auto;
+      }
+      @include pc {
+        width: 65.41%;
+      }
       &:hover {
         background-color: #fff;
         color: $main-bg-color;
@@ -43,6 +54,9 @@
     }
     &-privacy {
       margin-bottom: 1.5rem;
+      @include pad {
+        margin-bottom: 3rem;
+      }
       input[type="checkbox"] {
         display: none;
       }
@@ -69,37 +83,6 @@
         color: #fff;
         background-color: $main-font-color;
       }
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .contact_us {
-    padding: $section-padding-md 0;
-    .container {
-      max-width: 600px;
-    }
-    &-title {
-      font-size: $title-fz-md;
-      margin-bottom: 3rem;
-    }
-    &-form {
-      &-privacy {
-        margin-bottom: 3rem;
-      }
-      &-btn {
-        display: block;
-        width: calc(75% - 16px);
-        margin: 0 auto;
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .contact_us {
-    .container {
-      max-width: 660px;
     }
   }
 }
