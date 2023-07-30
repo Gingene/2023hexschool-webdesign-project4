@@ -1,11 +1,16 @@
 .glasses {
   &-product {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
     margin-bottom: 4rem;
+    @include pad {
+      row-gap: 2.5rem;
+      margin-bottom: 5rem;
+    }
+    @include pc {
+      row-gap: 5rem;
+    }
     &-card {
       &-title {
         display: flex;
@@ -44,37 +49,14 @@
   }
   &-sm {
     display: none;
+    @include pad {
+      display: block;
+    }
   }
   &-lg {
     display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .glasses {
-    &-sm {
+    @include pc {
       display: block;
-    }
-    &-product {
-      row-gap: 2.5rem;
-      margin-bottom: 5rem;
-      &-card {
-        width: calc(50% - 12px);
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .glasses {
-    &-lg {
-      display: block;
-    }
-    &-product {
-      row-gap: 5rem;
-      &-card {
-        width: calc(25% - 18px);
-      }
     }
   }
 }

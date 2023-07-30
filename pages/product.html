@@ -44,13 +44,13 @@
     </div>
     <main>
       <div class="container">
-        <section class="optical-section active" id="optical">
+        <section class="optical-section active section-index" id="optical">
           <div class="optical-content">
             <h2 class="optical-content-title">Celluloid Combi</h2>
             <p class="optical-content-description">賽璐珞鈦金屬混合鏡框</p>
           </div>
-          <ul class="glasses-product">
-            <li class="glasses-product-card">
+          <ul class="glasses-product row row-gap">
+            <li class="glasses-product-card card-m2-l4">
               <img src="../assets/images/product-1.png" alt="glasses-1" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -65,7 +65,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card">
+            <li class="glasses-product-card card-m2-l4">
               <img src="../assets/images/product-2.png" alt="glasses-2" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -80,7 +80,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card">
+            <li class="glasses-product-card card-m2-l4">
               <img src="../assets/images/product-3.png" alt="glasses-3" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -95,7 +95,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card">
+            <li class="glasses-product-card card-m2-l4">
               <img src="../assets/images/product-4.png" alt="glasses-4" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -110,7 +110,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card">
+            <li class="glasses-product-card card-m2-l4">
               <img src="../assets/images/product-5.png" alt="glasses-5" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -125,7 +125,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-sm">
+            <li class="glasses-product-card glasses-sm card-m2-l4">
               <img src="../assets/images/product-6.png" alt="glasses-6" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -140,7 +140,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-1.png" alt="glasses-1" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -155,7 +155,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-2.png" alt="glasses-2" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -170,7 +170,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-3.png" alt="glasses-3" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -185,7 +185,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-4.png" alt="glasses-4" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -200,7 +200,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-5.png" alt="glasses-5" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -215,7 +215,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-6.png" alt="glasses-6" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -231,37 +231,15 @@
               </div>
             </li>
           </ul>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-pre">上一頁</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-page">1</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-page active">2</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-page">3</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-page">4</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-page">5</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-item-pre">下一頁</a>
-            </li>
-          </ul>
+          <%-include('./layout/pagination'); %>
         </section>
-        <section class="sunglasses-section" id="sunglasses">
+        <section class="sunglasses-section section-index" id="sunglasses">
           <div class="sunglasses-content">
             <h2 class="sunglasses-content-title">2020 NEW COLLECTION</h2>
             <p class="sunglasses-content-description">賽璐珞鈦金屬混合鏡框</p>
           </div>
-          <ul class="glasses-product">
-            <li class="glasses-product-card">
+          <ul class="glasses-product row row-gap">
+            <li class="glasses-product-card card-m2-l4">
               <img src="../assets/images/product-7.png" alt="glasses-7" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -276,7 +254,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card">
+            <li class="glasses-product-card card-m2-l4">
               <img src="../assets/images/product-8.png" alt="glasses-8" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -291,7 +269,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card">
+            <li class="glasses-product-card card-m2-l4">
               <img src="../assets/images/product-9.png" alt="glasses-9" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -306,7 +284,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card">
+            <li class="glasses-product-card card-m2-l4">
               <img src="../assets/images/product-10.png" alt="glasses-10" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -321,7 +299,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card">
+            <li class="glasses-product-card card-m2-l4">
               <img src="../assets/images/product-11.png" alt="glasses-11" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -336,7 +314,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-sm">
+            <li class="glasses-product-card glasses-sm card-m2-l4">
               <img src="../assets/images/product-12.png" alt="glasses-12" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -351,7 +329,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-7.png" alt="glasses-7" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -366,7 +344,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-8.png" alt="glasses-8" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -381,7 +359,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-9.png" alt="glasses-9" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -396,7 +374,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-10.png" alt="glasses-10" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -411,7 +389,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-11.png" alt="glasses-11" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
@@ -426,7 +404,7 @@
                 ></a>
               </div>
             </li>
-            <li class="glasses-product-card glasses-lg">
+            <li class="glasses-product-card glasses-lg card-m2-l4">
               <img src="../assets/images/product-12.png" alt="glasses-12" />
               <h3 class="glasses-product-card-title">
                 <span class="glasses-product-card-title-text">BJ41600S</span>
