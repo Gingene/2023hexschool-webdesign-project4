@@ -7,6 +7,7 @@ function productPage() {
   const sunglassesSection = document.querySelector(".sunglasses-section");
   categoryMenuItem.forEach((item) => {
     item.addEventListener("click", function (e) {
+      e.preventDefault();
       console.log(e.target.innerText);
       removecategoryMenu();
       e.target.classList.toggle("active");

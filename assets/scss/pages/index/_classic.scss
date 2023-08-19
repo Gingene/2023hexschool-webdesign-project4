@@ -10,12 +10,14 @@
       flex-direction: row;
     }
     &-card {
-      overflow: hidden;
+      div {
+        overflow: hidden;
+      }
       &-pic {
         margin-bottom: 0.5rem;
         transition: transform 0.5s ease;
         &:hover {
-          transform: scale(1.1);
+          transform: scale(1.2);
         }
       }
       &-title {

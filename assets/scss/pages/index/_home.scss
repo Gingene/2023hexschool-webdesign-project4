@@ -1,16 +1,23 @@
 .home {
   background-image: url(../images/home-header-sm.png);
   background-size: cover;
+  height: 396px;
+  @include pad {
+    height: 878px;
+  }
   @include pc {
     background-image: url(../images/home-header.png);
+  }
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
   }
   &-banner {
     color: $main-font-color;
     text-align: right;
-    padding: 143px 0;
-    @include pad {
-      padding: 339px 0;
-    }
+
     h1 {
       @include pad {
         font-size: 2.25rem;

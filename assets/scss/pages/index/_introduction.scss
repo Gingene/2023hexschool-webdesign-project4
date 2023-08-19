@@ -1,6 +1,7 @@
 .introduction {
   background-color: #fbf2f2;
   &-title {
+    color: $main-font-color;
     @include pad {
       margin-bottom: 1.5rem;
     }

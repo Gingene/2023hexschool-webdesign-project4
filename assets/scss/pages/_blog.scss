@@ -111,13 +111,26 @@
       }
       &-text {
         display: none;
+
         @include pad {
-          display: block;
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         @include pc {
+          display: block;
           font-size: 1.25rem;
         }
         &-more {
+          display: none;
+          &:hover {
+            color: $main-font-color;
+          }
+          @include pad {
+            display: inline;
+          }
           @include pc {
             display: block;
             text-transform: uppercase;
@@ -132,14 +145,7 @@
             margin-top: 120px;
           }
         }
-        &-lg {
-          display: none;
-          @include pc {
-            display: inline;
-          }
-        }
       }
-
       transition: all 0.5s;
     }
   }

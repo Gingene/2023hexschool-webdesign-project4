@@ -27,6 +27,8 @@
       padding: 6px 12px;
       margin-bottom: 1rem;
       font-size: 1rem;
+      background-color: #fbf2f2;
+      border: 1px solid #000;
     }
     &-btn {
       border: 0;
@@ -46,10 +48,7 @@
         width: 65.41%;
       }
       &:hover {
-        background-color: #fff;
-        color: $main-bg-color;
-        font-size: 1.25rem;
-        margin-bottom: -6px;
+        background-color: $main-font-color;
       }
     }
     &-privacy {

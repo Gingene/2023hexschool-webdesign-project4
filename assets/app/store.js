@@ -35,7 +35,7 @@ function storePage() {
     }
 
     locationInput.addEventListener("click", function (e) {
-      if (e.target) {
+      if (e) {
         e.target.value = "";
       }
     });
